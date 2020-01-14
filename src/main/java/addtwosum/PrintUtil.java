@@ -2,7 +2,11 @@ package addtwosum;
 
 public class PrintUtil {
 
-	public static String print(ListNode listNode) {
+	public static void printOut(ListNode listNode) {
+		System.out.println(toString(listNode));
+
+	}
+	public static String toString(ListNode listNode) {
 		StringBuffer buffer = new StringBuffer();
 
 		while(listNode != null) {
