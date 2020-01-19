@@ -110,3 +110,9 @@ buildNumber.properties
 hs_err_pid*
 
 /leetcode.iml
+.idea/.gitignore
+.idea/compiler.xml
+.idea/misc.xml
+.idea/vcs.xml
+leetcode.iml
+src/main/resources/
