@@ -1,4 +1,4 @@
-package addtwosum;
+package common;
 
 public class PrintUtil {
 
@@ -6,6 +6,7 @@ public class PrintUtil {
 		System.out.println(toString(listNode));
 
 	}
+
 	public static String toString(ListNode listNode) {
 		StringBuffer buffer = new StringBuffer();
 

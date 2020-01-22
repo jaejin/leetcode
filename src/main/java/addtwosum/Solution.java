@@ -1,14 +1,17 @@
 package addtwosum;
 
+import common.ListNode;
+import common.PrintUtil;
+
 public class Solution {
 
 	public ListNode addTwoNumbers(ListNode first, ListNode second) {
 		ListNode result = null;
 		int next = 0;
-		while(first != null || second != null) {
+		while (first != null || second != null) {
 			int sumValue = 0;
 			if (first != null && second != null) {
-				sumValue = first.val + second.val +next;
+				sumValue = first.val + second.val + next;
 			} else if (first == null) {
 				sumValue = second.val+next;
 			} else if (second == null) {

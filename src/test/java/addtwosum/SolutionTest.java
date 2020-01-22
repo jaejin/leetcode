@@ -1,11 +1,13 @@
 package addtwosum;
 
+import common.ListNode;
+import common.PrintUtil;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
 
@@ -51,28 +53,28 @@ class SolutionTest {
 
 	@Test
 	void sum() {
-		assertEquals("2-4-6-", PrintUtil.toString(solution.addTwoNumbers(sample(), sample()))); ;
+		assertEquals("2-4-6-", PrintUtil.toString(solution.addTwoNumbers(sample(), sample())));
 	}
 
 	@Test
 	void sum313_799() {
 		assertEquals("0-1-3-1-", PrintUtil.toString(solution.addTwoNumbers(
-			solution.reverse(makeFromList(Arrays.asList(3,1,3))),
-			solution.reverse(makeFromList(Arrays.asList(7,9,9)))))); ;
+			solution.reverse(makeFromList(Arrays.asList(3, 1, 3))),
+			solution.reverse(makeFromList(Arrays.asList(7, 9, 9))))));
 	}
 
 	@Test
 	void sum3133_799() {
 		assertEquals("0-1-3-4-", PrintUtil.toString(solution.addTwoNumbers(
-			solution.reverse(makeFromList(Arrays.asList(3,1,3,3))),
-			solution.reverse(makeFromList(Arrays.asList(7,9,9)))))); ;
+			solution.reverse(makeFromList(Arrays.asList(3, 1, 3, 3))),
+			solution.reverse(makeFromList(Arrays.asList(7, 9, 9))))));
 	}
 
 	@Test
 	void sum1_99() {
 		assertEquals("0-0-1-", PrintUtil.toString(solution.addTwoNumbers(
 			solution.reverse(makeFromList(Arrays.asList(1))),
-			solution.reverse(makeFromList(Arrays.asList(9,9)))))); ;
+			solution.reverse(makeFromList(Arrays.asList(9, 9))))));
 	}
 
 	@Test
